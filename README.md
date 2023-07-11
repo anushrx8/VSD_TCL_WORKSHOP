@@ -51,11 +51,11 @@ echo "        TCL  COMMAND CREATED BY ANUSH     "
   - user enters the wrong csv file/ file doesnt exist
 
 
-![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/1%5B2%5D.png)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/3.png)
 
   - user enters __-help__
 
-![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/2.png)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/4.png)
 
 
 ![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/3.png)
