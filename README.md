@@ -87,6 +87,10 @@ Displays an error when the required file is not in the needed directory
 
 ![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day2/3(2).png)
 
+Convert the constraint file into a matrix and define the SDC constraints
+
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day2/3.png)
+
 
 ## DAY-3
 
