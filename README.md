@@ -28,32 +28,40 @@ The command was created with the following algorithm:
 2) Creating the logo
 
 ```
-echo " *********        ****       ***      **     ****         ****                "
-echo " **     **       **  **      ****     **     ** **       **  **               "
-echo " **     **      **    **     ** **    **     **  **     **    **              " 
-echo " *********     **      **    **  **   **     **   **   **      **             " 
-echo " **            **********    **   **  **     **  **    **********             "
-echo " **            **      **    **    ** **     ** **     **      **             "
-echo " **            **      **    **     ****     ****      **      **             "
-echo 
-echo " a tcl command created by VISRUAT T R (its pronounced as Vishruth)            "
+echo "        *******   **    **   *******      "
+echo "        *******   ***   **   *******      "
+echo "        **   **   ****  **   **   **      "
+echo "        **   **   ** ** **   **   **      "
+echo "        ******    **  ****   *******      "
+echo "        **  ***   **   ***   **   **      "
+echo "        **  ***   **    **   **   **      "
+echo "        **  ***   **    **   **   **      "
+echo
+echo
+echo "        TCL  COMMAND CREATED BY ANUSH     "
+
 ```
 
 3) verifying three general scenarios for a user POV
   - user doesnt enter the csv file
 
-![Screenshot from 2023-06-15 11-23-50](https://github.com/Visruat/VSD-TCL/assets/125136551/6503b789-2fbe-461e-9f81-99a4e564f794)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/2.png)
 
 
   - user enters the wrong csv file/ file doesnt exist
 
 
-![Screenshot from 2023-06-15 11-35-33](https://github.com/Visruat/VSD-TCL/assets/125136551/53b2f085-f63a-4b68-9c16-5e56df8e23de)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/1%5B2%5D.png)
 
   - user enters __-help__
 
-![Screenshot from 2023-06-15 11-37-11](https://github.com/Visruat/VSD-TCL/assets/125136551/68c64691-8eef-47df-918f-241469033199)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/2.png)
 
+
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/3.png)
+
+
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/4.png)
 
 4) source the Unix shell to the Tcl script by passing the required csv file 
 
@@ -67,15 +75,15 @@ __Converting inputs to format[1] and feeding it to yosys for synthesis__
 
   __- Create Variables__
 
-![Screenshot from 2023-06-15 15-11-10](https://github.com/Visruat/VSD-TCL/assets/125136551/1a039045-a2f5-4bc9-84c5-14f170450bd8)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day2/1.png)
 
   __- Checking if the directories exist or not ( done to prevent the script from breaking )__
 
-![Screenshot from 2023-06-15 15-29-57](https://github.com/Visruat/VSD-TCL/assets/125136551/17c7398b-593d-40f9-a267-35bc6e7afc9a)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day2/2.png)
 
 Displays an error when the required file is not in the needed directory
 
-![Screenshot from 2023-06-15 16-50-05](https://github.com/Visruat/VSD-TCL/assets/125136551/a82bf99c-b7bf-4288-b77a-5766d2ac8112)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day2/3.png)
 
 
 ## DAY-3
@@ -107,30 +115,14 @@ __Creating scripts for synthesis and running it on yosys__
   - creating script for Hierarchy check
   - running hierarchy check
 
-  Case 1: When all the modules are present and called correctly 
 
-![Screenshot from 2023-06-18 16-51-32](https://github.com/Visruat/VSD-TCL/assets/125136551/f0220dd8-4868-4a44-8b11-fe8a37ae9ca8)
-
-  Case 2: referenced in module error due to calling incorrectly or module doesnt exist
-
-![Screenshot from 2023-06-18 16-53-40](https://github.com/Visruat/VSD-TCL/assets/125136551/2ea42db4-f89a-4bc6-b4fb-345ab93d1637)
-
-  - after the hierarchy check is passed . The main synthesis script is written.
-  - running synthesis if there are no error in hierarchy check.
-
-  Case 1: No error in hierarchy
-
-![Screenshot from 2023-06-18 17-10-49](https://github.com/Visruat/VSD-TCL/assets/125136551/916f0c46-9f45-4812-8ab6-a7f234ed71f5)
-
-  Case 2: error encountered in hierarchy
-
-![Screenshot from 2023-06-18 17-12-06](https://github.com/Visruat/VSD-TCL/assets/125136551/24095315-680a-4905-960c-6da157f034d3)
-
+__work in progress__
 
 ## DAY-5
 
 __create script for OpenTimer and run STA analysis followed by generation of Quality of Results (QoR)__
 
 _An introduction to procs_
-  - To generate a script for OpenTimer I will be making use of procs. Procs are an external tcl file that perform an operation that is specified in it when sourced to the main tcl file. It works similar to how a function works in Python Programming. An example of a proc would be read_liberty <args> where options _like -lib, -late, -early and /or <filename>_ can be passed as an arguememt to the proc. Once the proc is sourced in the main tcl script the read_liberty command will be executed by referring to the proc and mapping the arguements to the external tcl script(proc script). At the end of the proc command, the main tcl script will be left with the output of the proc.
+  - To generate a script for OpenTimer I will be making use of procs. Procs are an external tcl file that performs an operation specified in it when sourced to the main tcl file. It works similarly to how a function works in Python Programming. An example of a proc would be read_liberty <args> where options _like -lib, -late, -early and /or <filename>_ can be passed as an argument to the proc. Once the proc is sourced in the main tcl script the read_liberty command will be executed by referring to the proc and mapping the arguments to the external tcl script(proc script). At the end of the proc command, the main tcl script will be left with the output of the proc.
   
+__work in progress__
