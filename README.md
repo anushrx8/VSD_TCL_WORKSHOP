@@ -58,15 +58,11 @@ echo "        TCL  COMMAND CREATED BY ANUSH     "
 ![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/4.png)
 
 
-![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/3.png)
-
-
-![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day1/4.png)
 
 4) source the Unix shell to the Tcl script by passing the required csv file 
 
 ```
-tclsh pandabro.tcl $argv[1] 
+tclsh vsdsynth.tcl $argv[1] 
 ```
 Note : Make sure the file is executable by using the command ``` chmod -R 777 panda ``` 
 
@@ -83,7 +79,7 @@ __Converting inputs to format[1] and feeding it to yosys for synthesis__
 
 Displays an error when the required file is not in the needed directory
 
-![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day2/3.png)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day2/3(2).png)
 
 
 ## DAY-3
@@ -98,11 +94,11 @@ Note: need to identify bussed and non bussed inputs and outputs before entering 
 
 The script writing the sdc constraints.
 
-![Screenshot from 2023-06-18 14-19-37](https://github.com/Visruat/VSD-TCL/assets/125136551/8d0cb933-cbc5-4aae-93dd-bc5819c33a3a)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day3/1.png)
 
-A snip of the sdc file 
+The sdc file 
 
-![Screenshot from 2023-06-18 14-16-25](https://github.com/Visruat/VSD-TCL/assets/125136551/d80f44f6-45ce-418a-b067-bebf900f1217)
+![alt text](https://github.com/anushrx8/VSD_TCL_WORKSHOP/blob/main/assets/day3/2.png)
 
 ## DAY-4
 
@@ -123,6 +119,6 @@ __work in progress__
 __create script for OpenTimer and run STA analysis followed by generation of Quality of Results (QoR)__
 
 _An introduction to procs_
-  - To generate a script for OpenTimer I will be making use of procs. Procs are an external tcl file that performs an operation specified in it when sourced to the main tcl file. It works similarly to how a function works in Python Programming. An example of a proc would be read_liberty <args> where options _like -lib, -late, -early and /or <filename>_ can be passed as an argument to the proc. Once the proc is sourced in the main tcl script the read_liberty command will be executed by referring to the proc and mapping the arguments to the external tcl script(proc script). At the end of the proc command, the main tcl script will be left with the output of the proc.
+  - To generate a script for OpenTimer, procs will be used. Procs are like functions in Python and are stored in an external tcl file. When sourced to the main tcl file, they perform a specified operation. One example of a proc is read_liberty, which takes options like -lib, -late, -early, and/or as arguments. By sourcing the proc in the main tcl script and mapping the arguments to the external tcl script, the read_liberty command is executed. The output of the proc is then available in the main tcl script.
   
 __work in progress__
