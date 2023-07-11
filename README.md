@@ -2,7 +2,13 @@
 --------------------------------------------------------------------------------------------------------
 _Author: Anush Kumar_
 
-_Acknowledgements: TCL Workshop by [Mr. Kunal Ghosh](https://github.com/kunalg123) , [VLSI System Design](https://www.vlsisystemdesign.com/)_
+_Acknowledgements:_
+
+_1.TCL Workshop by [Mr. Kunal Ghosh](https://github.com/kunalg123) , [VLSI System Design](https://www.vlsisystemdesign.com/)_
+
+_2.T R Visruat_
+
+_3.Geetima Kachari_
 
 ## Introduction
 TCL (Tool Command Language) is a popular scripting language used for various purposes, such as rapid prototyping, automation, and extending applications. It has a straightforward syntax and is commonly used for tasks like file manipulation, text processing, and system administration. TCL allows users to write scripts that interact with other programs, execute commands, manipulate data, and perform various operations. It is known for its simplicity and flexibility, making it an accessible language for both beginners and experienced programmers.
