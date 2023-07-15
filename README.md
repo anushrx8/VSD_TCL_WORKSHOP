@@ -22,7 +22,7 @@ TCL (Tool Command Language) is a popular scripting language used for various pur
 
 ## DAY-1
 
-__Create Command (panda) and pass csv file from UNIC shell to Tcl script__
+__Create Command (rna) and pass csv file from UNIC shell to Tcl script__
 
 The command was created with the following algorithm:
 1) letting the system know that its a UNIX script
